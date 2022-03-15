@@ -1,0 +1,26 @@
+[
+	{
+		"title": "Goma",
+		"price": 100,
+		"thumbnail": "goma.png",
+		"id": 1
+	},
+	{
+		"title": "Lápiz",
+		"price": 50,
+		"thumbnail": "lapiz.png",
+		"id": 2
+	},
+	{
+		"title": "Goma",
+		"price": 100,
+		"thumbnail": "goma.png",
+		"id": 3
+	},
+	{
+		"title": "Lápiz",
+		"price": 50,
+		"thumbnail": "lapiz.png",
+		"id": 4
+	}
+]

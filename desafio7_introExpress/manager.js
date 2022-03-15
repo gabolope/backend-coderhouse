@@ -56,39 +56,8 @@ const file1 = new Archivo();
 
 // EJECUTAR LOS MÉTODOS PARA AGREGAR PRODUCTOS.
 
-// Método guardar:
-// Nota: los métodos deben ejecutarse de uno a la vez porque sino se rompe.
-
-// El archivo no existe, lo genero y agrego un array vacío.
-/* file1.guardar("productos.txt", []) */
-
-// Ahora el archivo existe, puedo agregar productos con guardar.
-/* file1.guardar("productos.txt", {
-    title: "Goma",
-    price: 100,
-    thumbnail: "goma.png"
-}) */
-/* file1.guardar("productos.txt", {
-    title: "Lápiz",
-    price: 50,
-    thumbnail: "lapiz.png"
-}) */
-
-// Método leer:
-/* file1.leer("productos.txt") */
-
-// Método borrar:
-/* file1.borrar("productos.txt") */
-
-
-// >-------------------< CORRECCIÓN >-------------------<
- 
-/* Hola Gabi! como va eso? Esta muy bien tu desafio! felicitaciones, queda aprobada tu entrega!. Te tiro una idea para resolver el problema de tener que ejecutar de una accion, sino se te rompe: Podrias envolver todas esas actiones en una funcion asyncrona e ir esperando a que se ejecute cada accion: */
-
 const fileActions = async() => {
-    // El archivo no existe, lo genero y agrego un array vacío.
     await file1.guardar("productos.txt", [])
-    // Ahora el archivo existe, puedo agregar productos con guardar.
     await file1.guardar("productos.txt", {
         title: "Goma",
         price: 100,
@@ -99,11 +68,8 @@ const fileActions = async() => {
         price: 50,
         thumbnail: "lapiz.png"
     })
-    // Método leer:
     await file1.leer("productos.txt")
-    // Método borrar:
-    /* await file1.borrar("productos.txt") */
+    await file1.borrar("productos.txt")
 }
-
 
 fileActions() 
